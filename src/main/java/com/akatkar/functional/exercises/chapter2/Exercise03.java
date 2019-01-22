@@ -1,6 +1,5 @@
 package com.akatkar.functional.exercises.chapter2;
 
-import com.akatkar.functional.exercises.chapter1.*;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;

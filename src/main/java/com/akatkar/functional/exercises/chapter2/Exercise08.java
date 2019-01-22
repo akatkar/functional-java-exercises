@@ -1,8 +1,6 @@
 package com.akatkar.functional.exercises.chapter2;
 
 import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
 
 /**
  * All exercises should be completed using Lambda expressions and the new
@@ -10,23 +8,25 @@ import java.util.stream.Collectors;
  * loop in any of the code. Use method references rather than full lambda
  * expressions wherever possible.
  */
-public class Exercise02 {
+public class Exercise08 {
 
     /**
-     * Exercise 2
-     *
-     * Modify exercise 1 so that the new list only contains strings that have an
-     * odd length
+     * Sort int array
      */
-    private void exercise2() {
-        List<String> list = Arrays.asList(
-                "The", "Quick", "BROWN", "Fox", "Jumped", "Over", "The", "LAZY", "DOG");
-
+    private int[] sort(int[] a) {
         /* YOUR CODE HERE */
+        return null;
+    }
+
+    private void exercise8() {
+        int[] a = {1, 7, 3, 9, 8, 6, 2, 5, 4};
+
+        Arrays.stream(sort(a))
+              .forEach(System.out::print);
+        System.out.println("");
     }
 
     public static void main(String[] args) {
-        new Exercise02()
-                .exercise2();
+        new Exercise08().exercise8();
     }
 }
