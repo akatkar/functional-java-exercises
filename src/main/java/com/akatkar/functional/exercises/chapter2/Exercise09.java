@@ -1,6 +1,7 @@
 package com.akatkar.functional.exercises.chapter2;
 
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * All exercises should be completed using Lambda expressions and the new
@@ -19,6 +20,13 @@ public class Exercise09 {
     // Movie{Back to the future,8.5} WATCHED
     // Movie{La la land,7.8} WATCHED
     private void exercise9() {
+        List<Movie> movies = Arrays.asList(
+                new Movie("Lord of the rings", 8.8, true),
+                new Movie("La la land", 7.8, true),
+                new Movie("Lolita", 5.0, false),                
+                new Movie("Back to the future", 8.5, true),
+                new Movie("Carlito's way", 7.9, false),
+                new Movie("Pulp fiction", 8.9, false));
         
         /* YOUR CODE HERE */
     }
