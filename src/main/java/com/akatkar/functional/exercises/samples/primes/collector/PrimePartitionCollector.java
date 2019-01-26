@@ -19,7 +19,7 @@ import static java.util.stream.Collector.Characteristics.IDENTITY_FINISH;
  *
  * @author Ali Katkar
  */
-public class PrimeNumbersCollector
+public class PrimePartitionCollector
         implements Collector<Integer, Map<Boolean, List<Integer>>, Map<Boolean, List<Integer>>> {
 
     private static <A> List<A> takeWhile(List<A> list, Predicate<A> p) {
