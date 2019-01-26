@@ -66,9 +66,10 @@ public class Exercise01 {
             stream = stream.parallel();  // Convert the stream to a parallel one
         }
         stream.forEach(i -> {
-            for (int j = 0; j < LIST_SIZE; j++) {
-                distances[i][j] = Levenshtein.lev(wordList.get(i), wordList.get(j));
-            }
+            IntStream.range(0, LIST_SIZE)
+                    .forEach(j -> {
+                        distances[i][j] = Levenshtein.lev(wordList.get(i), wordList.get(j));
+                    });
         });
         return distances;
     }

@@ -1,6 +1,5 @@
 package com.akatkar.functional.exercises.chapter3.solutions;
 
-import com.akatkar.functional.exercises.chapter3.*;
 import java.io.IOException;
 import java.util.List;
 import java.util.function.Supplier;
@@ -74,9 +73,10 @@ public class Exercise02 {
      */
     public static void main(String[] args) throws IOException {
         RandomWords fullWordList = new RandomWords();
-        List<String> wordList = fullWordList.createList(1000);
+        List<String> wordList = fullWordList.createList(200_000);
 
         measure("Sequential", () -> processWords(wordList, false));
+        System.out.println("");
         measure("Parallel", () -> processWords(wordList, true));
     }
 }
